@@ -1,0 +1,40 @@
+~ start
+
+if global.talked_to_master == false
+	Master: [[Greetings, young one.|Hark! Hello!|Fantastic to see you, young one.]] I see you have safely made your way here! Have any trouble along the way?
+	- None at all, I'm learning from the best.
+		Master: Ha! You know just how to push my buttons.
+		Master: Tell you what, I have one more thing I can teach you, take this.
+		OBTAINED SPELL: GUST
+		Master: This spell of GUST will allow you soar to new heights! See what I did there?
+		Master: I encourage you to trek back and test out your new found spell!
+		- Thank you, Master.
+		set global.double_jump = true
+		set global.talked_to_master = true
+		=> END
+	- Quite a bit actually, but I know I can be better.
+		Master: Huzzah! That's the spirit. Keep that up and you'll be as powerfull as me in no time.
+		Master: Tell you what, I have one more thing I can teach you, take this.
+		OBTAINED SPELL: GUST
+		Master: This spell of GUST will allow you soar to new heights! See what I did there?
+		Master: I encourage you to trek back and test out your new found spell!
+		- Thank you, Master.
+		set global.double_jump = true
+		set global.talked_to_master = true
+		=> END
+	- It would be a lot easier if I was able to somehow elevate my jumps.
+		Master: Funny that you say that, are you a mind reader?
+		Master: Tell you what, I have one more thing I can teach you, take this.
+		OBTAINED SPELL: GUST
+		Master: This spell of GUST will allow you soar to new heights! See what I did there?
+		Master: I encourage you to trek back and test out your new found spell!
+		- Thank you, Master.
+		set global.double_jump = true
+		set global.talked_to_master = true
+		=> END
+else:
+	Master: [[Greetings, young one.|Hark! Hello!|Fantastic to see you, young one.]] How can I help you?
+	- Just wanted to say hello.
+			Master: Ha! Well, hello! I hope that satisfies your taste!
+			=> END
+	
